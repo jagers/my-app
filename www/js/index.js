@@ -46,7 +46,6 @@ var app = {
 				$('#message').text("STOPPED");
 			}
 		});
-		$('#message').text("I'm ready!");
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
