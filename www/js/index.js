@@ -34,7 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		$( ".draggable" ).draggable();
+		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -49,3 +49,7 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$(function(){
+	$( ".draggable" ).draggable();
+});
