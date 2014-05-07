@@ -43,7 +43,8 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+		
+		document.getElementById('message').innerHTML = 'Received Event: ' + id;
         console.log('Received Event: ' + id);
     }
 };
