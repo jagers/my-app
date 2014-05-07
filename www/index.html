@@ -36,8 +36,11 @@
 			<div id="message">
 				This is where the message goes
 			</div>
+			<input type="text" id="input-text"/>
+			<input type="button" onclick="$('#message').text($('#input-text').val());">
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
