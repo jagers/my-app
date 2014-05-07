@@ -34,18 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		
-		$( "#draggable" ).draggable({
-			drag: function( event, ui ) {
-				//$('#message').text("DRAGGING");
-			},
-			start: function( event, ui ) {
-				$('#message').text("STARTED");
-			},
-			stop: function( event, ui ) {
-				$('#message').text("STOPPED");
-			}
-		});
+		$( ".draggable" ).draggable();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
