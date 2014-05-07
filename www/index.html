@@ -30,14 +30,14 @@
 		<img src="img/logo.png" class="draggable" id="logo" />
         <div class="app">
             <h1 class="draggable">PhoneGap</h1>
-            <div id="deviceready" class="blink" class="draggable">
+            <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
 			<div id="message" class="draggable">
 				This is where the message goes
 			</div>
-			<input type="text" id="input-text" class="draggable" />
+			<input type="text" id="input-text"/>
 			<input type="button" onclick="$('#message').text($('#input-text').val());"  value="MAGIC">
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
