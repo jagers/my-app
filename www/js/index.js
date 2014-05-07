@@ -50,5 +50,15 @@ var app = {
 };
 
 $(function() {
-$( "#draggable" ).draggable();
+	$( "#draggable" ).draggable({
+		drag: function( event, ui ) {
+			//$('#message').text("DRAGGING");
+		},
+		start: function( event, ui ) {
+			$('#message').text("STARTED");
+		},
+		stop: function( event, ui ) {
+			$('#message').text("STOPPED");
+		}
+	});
 });
