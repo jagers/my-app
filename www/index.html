@@ -25,9 +25,6 @@
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
-		<style>
-	  #draggable { width: 150px; height: 150px; padding: 0.5em; border:1px solid black;}
-	  </style>
     </head>
     <body>
 		<img src="img/logo.png" class="draggable" id="logo" />
@@ -40,7 +37,7 @@
 			<div id="message" class="draggable">
 				This is where the message goes
 			</div>
-			<input type="text" id="input-text" class="draggable" />
+			<input type="text" id="input-text"/>
 			<input type="button" onclick="$('#message').text($('#input-text').val());"  value="MAGIC">
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
